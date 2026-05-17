@@ -60,25 +60,21 @@ ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 ssh.connect(host, port=port, username=user, password=password, timeout=15)
 
-# Upload source
 sftp = ssh.open_sftp()
 with sftp.open('/tmp/update_prefs.c', 'w') as f:
     f.write(src)
 sftp.close()
 
-# Compile
 _, out, err = ssh.exec_command(
     'gcc /tmp/update_prefs.c -fno-stack-protector -no-pie -m32 -o /tmp/update_prefs 2>&1'
 )
 result = out.read().decode() + err.read().decode()
 print("Compile:", result.strip() or "OK")
 
-# Get symbols
 _, out, _ = ssh.exec_command('nm /tmp/update_prefs | grep -E "locked_set|print_default|printf|strcmp|strncpy|b64"')
 print("\nnm output:")
 print(out.read().decode())
 
-# Get GOT entries
 _, out, _ = ssh.exec_command('readelf -r /tmp/update_prefs')
 print("\nRELOCATIONS:")
 print(out.read().decode())
