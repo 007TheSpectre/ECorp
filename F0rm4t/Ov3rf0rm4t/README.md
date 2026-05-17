@@ -46,7 +46,7 @@ Le script automatise la connexion SSH au serveur pour atteindre le réseau local
 Flag récupéré : EPI{7H475_50M3_r34LLy_84D_C91}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut applqiuer les corrections suivantes :
 
 - Assurer l'intégrité des chaînes de format : Ne passez jamais une variable contrôlée par l'utilisateur final en tant que premier argument d'une fonction de la famille printf. Utilisez systématiquement un format statique strict pour l'assignation :
 snprintf(locals.username, sizeof(locals.username), "%s", buffer);

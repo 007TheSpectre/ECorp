@@ -41,7 +41,7 @@ Une fois l'adresse de la fonction résolue et injectée dans la table GOT, le po
 EPI{that_wAs_D1fF1culT_8UT_YOU_MaNag3d_1t}
 
 ## Remédiation
-Pour corriger définitivement cette vulnérabilité, appliquez les mesures suivantes :
+Pour corriger définitivement cette vulnérabilité, on peut appliquer les mesures suivantes :
 
 - Spécifier systématiquement le format : Ne passez jamais une variable utilisateur directement comme premier argument d'une fonction d'impression. Utilisez un indicateur de chaîne de caractères explicite :
 printf("%s", buf);

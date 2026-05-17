@@ -43,7 +43,7 @@ EcorpGPT v0.001 - AD middleware - early alpha
 Flag récupéré : EPI{h4Nk_7hE_FrEE_p01n7er_MUs7_8E_SE7_70_nUlL_H44444Nk}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantes :
 
 - Mise à zéro systématique des pointeurs libérés : Ne laissez jamais un pointeur faire référence à un bloc mémoire restitué au système. Réinitialisez immédiatement la variable à NULL après l'appel à free() :
 free(auth);

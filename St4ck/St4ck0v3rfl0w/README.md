@@ -29,7 +29,7 @@ EPI{K0N5P1r4Cy_UNV31l3D_l375_F1n15h_17}
 Flag récupéré : EPI{K0N5P1r4Cy_UNV31l3D_l375_F1n15h_17}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantess :
 
 - Suppression de l'usage de fonctions obsolètes : Remplacez impérativement la fonction gets() par une fonction de lecture sécurisée telle que fgets(buffer, sizeof(buffer), stdin); pour éviter toute écriture hors des limites mémoires définies.
 

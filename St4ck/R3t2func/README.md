@@ -35,7 +35,7 @@ output: EPI{5ENI0R_d0E5N7_mEAN_Le55_pr0ne_70_HACK}
 Flag récupéré : EPI{5ENI0R_d0E5N7_mEAN_Le55_pr0ne_70_HACK}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantes :
 
 - Contrôle strict de la taille des écritures : Modifiez l'instruction de lecture pour restreindre le nombre d'octets aux limites du conteneur d'accueil en utilisant la taille réelle définie : read(0, buf, sizeof(buf));.
 

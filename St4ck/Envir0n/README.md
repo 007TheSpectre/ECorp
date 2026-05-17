@@ -36,7 +36,7 @@ Dehashing your hash...
 Flag récupéré : EPI{7H1s_1SN7_s4f3R_1N_V4R14BL3z}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantes :
 
 - Bannir strcpy() : Remplacez l'appel par une fonction qui respecte et limite la taille du tampon de destination, par exemple : strncpy(locals.hash, ptr, sizeof(locals.hash) - 1); en s'assurant de forcer manuellement le dernier octet à zéro pour garantir la fin de chaîne.
 

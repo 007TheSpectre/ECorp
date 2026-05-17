@@ -41,7 +41,7 @@ Spawning preprod chatbot...
 Flag récupéré : EPI{H34p_1S_4_M0Ns73r_0n_17S_0wN}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantes :
 
 - Bannir strcpy() : Remplacez l'affectation non contrôlée par l'usage exclusif de fonctions limitant explicitement le volume de transfert mémoire, par exemple : strncpy(d->password, lower + 22, sizeof(d->password) - 1); en veillant à clore manuellement la chaîne avec un octet nul.
 

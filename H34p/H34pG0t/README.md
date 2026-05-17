@@ -36,11 +36,10 @@ EcorpGPT v0.01 - unstable features, be warned!
 [GPT] > Access granted. Flag: EPI{reWr171ng_4_p01N7ER_70_G07_70_b4CKd00r_15_5eXy}
 Spawning arcade chatbot...
 
-[!!!] FLAG: EPI{reWr171ng_4_p01N7ER_70_G07_70_b4CKd00r_15_5eXy}
 Flag récupéré : EPI{reWr171ng_4_p01N7ER_70_G07_70_b4CKd00r_15_5eXy}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantes :
 
 - Bannir strcpy() : Substituez les fonctions de copie non vérifiées par des alternatives bornées telles que snprintf ou strncpy en limitant strictement l'écriture à la taille allouée pour les tampons respectifs (163 octets pour d1->secret et 46 octets pour d2->secret).
 

@@ -29,7 +29,7 @@ cat /tmp/srcs_extract/secret-manual.txt
 Flag récupéré : EPI{1_H0P3_Y0uLL_g1v3_m3_4_C4Ll84ck}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantes :
 
 - Remplacement de gets() : Supprimez impérativement l'utilisation de gets() au profit d'une alternative robuste comme fgets(locals.cool_prog, sizeof(locals.cool_prog), stdin); afin de garantir qu'aucun octet supplémentaire ne vienne déborder sur la pile.
 

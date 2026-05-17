@@ -26,7 +26,7 @@ Failsafe disabled, sending data to our internal website...
 Flag récupéré : EPI{W3lC0m3_70_0v3RFL0wZ}
 
 ## Remédiation
-Pour corriger cette faille, il est impératif de :
+Pour corriger cette faille, on peut appliquer les corrections suivantes :
 
 - Remplacer gets(username) par une fonction sécurisée qui limite la taille de la saisie, comme fgets(username, sizeof(username), stdin).
 

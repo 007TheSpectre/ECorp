@@ -42,7 +42,7 @@ Deciphering the database...
 Flag récupéré : EPI{whY_lImIT_Our5elVe5_tO_a55i9NEd_vaLUEz}
 
 ## Remédiation
-Pour sécuriser l'application, appliquez les corrections suivantes :
+Pour sécuriser l'application, on peut appliquer les corrections suivantes :
 
 - Bannir gets() : Remplacez l'appel par une fonction qui respecte la taille du tampon alloué, par exemple : fgets(locals.password, sizeof(locals.password), stdin);.
 
